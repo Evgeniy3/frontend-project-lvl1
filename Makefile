@@ -8,4 +8,4 @@ publish: # публикация
 	npm publish --dry-run
 
 lint: # запуск
-    npx eslint . 	
+	npx eslint . 	
