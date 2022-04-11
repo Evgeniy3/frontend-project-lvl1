@@ -16,6 +16,6 @@ rules:
     - js: always
 plugins:
     - import
-    - airbnb-base
+  
     
     
