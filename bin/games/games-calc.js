@@ -1,17 +1,17 @@
-import { games } from './games.js';
+import { games } from '../../src/index.js';
 
 export const gameDescription = 'What is the result of the expression?';
 
 const operators = '+*-';
 
-const getAnswer = (a, b, operator) => {
+const getAnswer = (num1, num2, operator) => {
   switch (operator) {
     case '+':
-      return a + b;
+      return num1 + num2;
     case '-':
-      return a - b;
+      return num1 - num2;
     case '*':
-      return a * b;
+      return num1 * num2;
     default:
       break;
   }
@@ -21,15 +21,15 @@ const getAnswer = (a, b, operator) => {
 export const generateQuestionAnswer = () => {
   const getRandomInteger = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
-  const a = getRandomInteger(0, 50);
+  const num1 = getRandomInteger(0, 50);
 
-  const b = getRandomInteger(0, 50);
+  const num2 = getRandomInteger(0, 50);
 
   const operator = operators[getRandomInteger(0, operators.length - 1)];
 
-  const question = `${a} ${operator} ${b}`;
+  const question = `${num1} ${operator} ${num2}`;
 
-  const answer = String(getAnswer(a, b, operator));
+  const answer = String(getAnswer(num1, num2, operator));
 
   return [answer, question];
 };
