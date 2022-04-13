@@ -4,3 +4,4 @@
 [![GitHub Actions Demo](https://github.com/Evgeniy3/frontend-project-lvl1/actions/workflows/github-actions-demo.yml/badge.svg)](https://github.com/Evgeniy3/frontend-project-lvl1/actions/workflows/github-actions-demo.yml)
  [![asciicast](https://asciinema.org/a/486279.svg)](https://asciinema.org/a/486279)
  [![asciicast](https://asciinema.org/a/486659.svg)](https://asciinema.org/a/486659)
+ [![asciicast](https://asciinema.org/a/486975.svg)](https://asciinema.org/a/486975)
