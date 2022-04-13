@@ -1,9 +1,6 @@
 install: # разворачиыание и запуск 
 	npm ci
 
-test:
-	npm test
-
 brain-games: # разворачивание и запуск
 	node bin/brain-games.js
 
