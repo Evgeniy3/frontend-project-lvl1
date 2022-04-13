@@ -17,5 +17,6 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - run: make install
       - run: make lint
+      - run: make test
      
      
