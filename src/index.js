@@ -8,9 +8,9 @@ export function games(generateQuestionAnswer, gameDescription) {
 
   console.log(gameDescription);
 
-  const attemptsCount = 3;
+  const count = 3;
 
-  for (let i = 0; i < attemptsCount; i += 1) {
+  for (let i = 0; i < count; i += 1) {
     const [correctAnswer, question] = generateQuestionAnswer();
 
     console.log(`Question: ${question}`);
