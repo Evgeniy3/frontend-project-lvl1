@@ -1,4 +1,4 @@
-import { games } from '../../src/index.js';
+import games from '../../src/index.js';
 
 export const gameDescription = "'yes' if given number is prime. Otherwise answer 'no'.";
 

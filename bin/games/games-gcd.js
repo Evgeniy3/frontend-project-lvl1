@@ -1,4 +1,4 @@
-import { games } from '../../src/index.js';
+import games from '../../src/index.js';
 
 export const gameDescription = 'Find the greatest common divisor of given numbers.';
 

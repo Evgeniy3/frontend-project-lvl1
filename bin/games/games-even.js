@@ -1,4 +1,4 @@
-import { games } from '../../src/index.js';
+import games from '../../src/index.js';
 
 export const gameDescription = "Answer 'yes' if the number is even, otherwise answer 'no'.";
 

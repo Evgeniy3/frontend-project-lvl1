@@ -1,4 +1,4 @@
-import { games } from '../../src/index.js';
+import games from '../../src/index.js';
 
 export const gameDescription = 'What is the result of the expression?';
 
