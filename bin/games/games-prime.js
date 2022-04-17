@@ -13,7 +13,7 @@ const isPrime = (num) => {
 export function generateQuestionAnswer() {
   const getRandomInteger = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
-  const question = getRandomInteger(0, 50);
+  const question = getRandomInteger(0, 30);
 
   const answer = isPrime(question) ? 'yes' : 'no';
 
