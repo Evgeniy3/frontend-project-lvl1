@@ -1,10 +1,11 @@
-import games from '../../src/index.js';
+import games from '../index.js';
+import getRandom from '../utils.js';
 
 export const gameDescription = 'What is the result of the expression?';
 
 const operators = '+*-';
 
-const getAnswer = (num1, num2, operator) => {
+const result = (num1, num2, operator) => {
   switch (operator) {
     case '+':
       return num1 + num2;
@@ -19,17 +20,15 @@ const getAnswer = (num1, num2, operator) => {
 };
 
 export const generateQuestionAnswer = () => {
-  const getRandomInteger = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+  const num1 = getRandom(0, 50);
 
-  const num1 = getRandomInteger(0, 50);
+  const num2 = getRandom(0, 50);
 
-  const num2 = getRandomInteger(0, 50);
-
-  const operator = operators[getRandomInteger(0, operators.length - 1)];
+  const operator = operators[getRandom(0, operators.length - 1)];
 
   const question = `${num1} ${operator} ${num2}`;
 
-  const answer = String(getAnswer(num1, num2, operator));
+  const answer = String(result(num1, num2, operator));
 
   return [answer, question];
 };
